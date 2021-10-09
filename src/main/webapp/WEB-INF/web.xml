@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0" >
+  <display-name>Example</display-name>
+  <context-param>
+        <param-name>log4jFilelocation</param-name>
+        <param-value>/WEB-INF/log4j.properties</param-value>
+  </context-param>
+   
+  <listener>
+  	<listener-class>com.listeners.ApplicationContextListener</listener-class>
+  </listener>
+  
+  <servlet>
+    <servlet-name>RegisterServices</servlet-name>
+    <servlet-class>com.services.RegisterModuleService</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>RegisterServices</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LoginServices</servlet-name>
+    <servlet-class>com.services.LoginModuleService</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>LoginServices</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>BaseServices</servlet-name>
+    <servlet-class>com.services.BaseServlet</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>BaseServices</servlet-name>
+    <url-pattern>/Base</url-pattern>
+  </servlet-mapping>
+</web-app>

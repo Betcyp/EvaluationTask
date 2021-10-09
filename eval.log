@@ -1,0 +1,4 @@
+2021-10-08 19:00:11 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-10-08 19:00:11 INFO  ApplicationContextListener:35 - context object destroyed
+2021-10-08 19:00:43 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-10-08 19:00:43 INFO  ApplicationContextListener:35 - context object destroyed
