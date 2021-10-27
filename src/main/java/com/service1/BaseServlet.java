@@ -1,4 +1,4 @@
-package com.service;
+package com.service1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,12 +13,15 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
+import com.bussiness1.RegisterUser;
+import com.google.gson.Gson;
+
 
 @WebServlet("/BaseServlet")
 public class BaseServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	static Logger log = Logger.getLogger(BaseServlet.class);   
-   
+	Gson gson = new Gson();
     public BaseServlet() {
         super();
         
@@ -40,21 +43,28 @@ public class BaseServlet extends HttpServlet {
 			
 		}
 		result=sb.toString();
-		log.info("Request JSON string is:" +result);
 		return result;
 		
 	}
-	protected String sendResponse(HttpServletRequest request, HttpServletResponse response) throws IOException  {
+	protected PrintWriter sendResponse(HttpServletRequest request, HttpServletResponse response) throws IOException  {
 		
 		PrintWriter resp=null;
 		PrintWriter out = response.getWriter();
 		response.setContentType("application/json");
 		response.setCharacterEncoding("UTF-8");
 	    resp = out;
-		return null;
-	
+		return resp;
+		
+		/*String result=getRequestBody(request); 
+		RegisterUser reg = new RegisterUser(result);
+        String registerJson = this.gson.toJson(reg);
+        PrintWriter out = response.getWriter();
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+        out.write(registerJson);
+		return out; */
+	    
 	}
-	
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		

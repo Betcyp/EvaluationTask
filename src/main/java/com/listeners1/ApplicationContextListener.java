@@ -1,4 +1,4 @@
-package com.listeners;
+package com.listeners1;
 
 import java.io.File;
 
@@ -9,7 +9,7 @@ import javax.servlet.ServletContextListener;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-import com.databases.DbConnect;
+import com.databases1.DbConnect;
 
 
 public class ApplicationContextListener implements ServletContextListener {

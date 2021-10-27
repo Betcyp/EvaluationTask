@@ -1,6 +1,6 @@
-package com.bussiness;
+package com.bussiness1;
 
-public class BasicResponse {
+public class RegisterUser {
 	
 	private String firstName;
 	private String lastName;
@@ -8,6 +8,9 @@ public class BasicResponse {
 	private String email;
 	private String password;
 		 
+	public RegisterUser(String result) {
+		
+	}
 	public String getFirstName() {
 		return firstName;
 	}
