@@ -6,9 +6,11 @@ import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
@@ -66,9 +68,52 @@ public class BaseServlet extends HttpServlet {
 	    
 	}
 	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	/*protected void doPost(HttpServletRequest request, HttpServletResponse response,int c) throws ServletException, IOException {
+		
+		
+		HttpSession session = request.getSession(false);
+		  if (session == null)
+		  {
+			  log.info("No session is available");
+			  c=1;
+			//  session = request.getSession();
+		  }
+		  else {
+			  log.info("already session is created");
+			  c=2;
+		  }
+		  
+		  /*HttpSession session = request.getSession(false);
+		  if (session != null)
+		  {
+			 return session;
+		  }
+		  else {
+			  return null;
+		  }
+	
+	}*/
+	protected HttpSession sessionValidation(HttpServletRequest request) {
+		
+		HttpSession session = request.getSession(false);
+		if(session.getAttribute("email") == null){
+			//response.sendRedirect("login.html");
+		}
+		else {
+		 String myEmail = (String) session.getAttribute("email");
+		}
+		
+		String email = null;
+		String sessionID = null;
+		
+		Cookie[] cks = request.getCookies();
+		if(cks !=null){
+			for(Cookie cookie : cks){
+				if(cookie.getName().equals("email")) email= cookie.getValue();
+				if(cookie.getName().equals("JSESSIONID")) sessionID = cookie.getValue();
+			}
+		}
+		return session;
 		
 	}
-	
-
 }

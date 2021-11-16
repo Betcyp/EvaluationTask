@@ -14,7 +14,6 @@
     <servlet-name>RegisterServices</servlet-name>
     <servlet-class>com.service1.RegisterModuleService</servlet-class>
   </servlet>
- 
   <servlet-mapping>
     <servlet-name>RegisterServices</servlet-name>
     <url-pattern>/Register</url-pattern>
@@ -24,18 +23,35 @@
     <servlet-name>LoginServices</servlet-name>
     <servlet-class>com.service1.LoginModuleService</servlet-class>
   </servlet>
- 
   <servlet-mapping>
     <servlet-name>LoginServices</servlet-name>
     <url-pattern>/Login</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>BaseServices</servlet-name>
-    <servlet-class>com.services1.BaseServlet</servlet-class>
+    <servlet-class>com.service1.BaseServlet</servlet-class>
   </servlet>
- 
   <servlet-mapping>
     <servlet-name>BaseServices</servlet-name>
     <url-pattern>/Base</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>BalanceServices</servlet-name>
+    <servlet-class>com.service1.BalanceService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BalanceServices</servlet-name>
+    <url-pattern>/Balance</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>addMoney</servlet-name>
+    <servlet-class>com.service1.AddMoneyService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addMoney</servlet-name>
+    <url-pattern>/add</url-pattern>
   </servlet-mapping>
 </web-app>

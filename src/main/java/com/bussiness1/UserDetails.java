@@ -5,6 +5,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpSession;
+
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
@@ -72,59 +75,93 @@ public class UserDetails {
 		}
 	}
 	
-	public static void loginDatabase(String email, String password) throws SQLException {
+	public static void loginDatabase(String myEmail, String myPass, String mySessionId) throws SQLException {
 		Connection connection = null;
         PreparedStatement ps = null;
-        ResultSet rs=null;
 
 		try {
 			connection=DbConnect.getInstance().getConnection();
 			ps=connection.prepareStatement(PaymentQueries.LOGIN_QUERY);
-			ps.setString(1,email);
-            ps.setString(2,password);
-            rs =ps.executeQuery();
-            //JSONObject jsonObject=new JSONObject();
-			//while(rs.next()) {
-				//jsonObject.put("email",rs.getString("email"));
-				//jsonObject.put("password",rs.getInt("password"));
-			//}
-			//return jsonObject;
+			ps.setString(1,myEmail);
+            ps.setString(2,myPass);
+            ps.setString(3,mySessionId);
+            ps.executeUpdate();
 		}
 		finally {
 			ps.close();
-			rs.close();
-			connection.close();
-		}    
-	}
-	public static boolean emailExists(String email, String password) throws SQLException {
-		Connection connection = null;
-        PreparedStatement ps = null; 
-        ResultSet rs = null;
-        boolean exists = false;
-        try {
-        	connection=DbConnect.getInstance().getConnection();
-        	ps=connection.prepareStatement(PaymentQueries.EMAIL_QUERY);
-			ps.setString(1,email);
-			rs=ps.executeQuery();
-			if(rs.next()) 
-	         {
-				exists = true;
-				ps=connection.prepareStatement(PaymentQueries.PASSWORD_QUERY);
-				ps.setString(1,password);
-				rs=ps.executeQuery();
-				if(rs.next()) 
-		         {
-					exists = true;
-		         }
-			 }
-        }
-        finally {
-			ps.close();
-			rs.close();
 			connection.close();
 		}
-		return exists;  
-		
+		 
 	}
-	
+     public static boolean emailPassExists(String email, String password) throws SQLException {
+    	 Connection connection = null;
+    	 PreparedStatement ps = null; 
+    	 ResultSet rs = null;
+    	 boolean exists = false;
+    	 try {
+    	 	connection=DbConnect.getInstance().getConnection();
+    	 	ps=connection.prepareStatement(PaymentQueries.EMAIL_QUERY);
+    	 	ps.setString(1,email);
+    	 	rs=ps.executeQuery();
+    	 	if(rs.next()) 
+    	      {
+    	 		ps=connection.prepareStatement(PaymentQueries.PASSWORD_QUERY);
+    	 		ps.setString(1,password);
+    	 		rs=ps.executeQuery();
+    	 		if(rs.next()) 
+    	          {
+    	 			exists = true;
+    	          }
+    	 	 }
+    	 }
+    	 finally {
+    	 	ps.close();
+    	 	rs.close();
+    	 	connection.close();
+    	 }
+    	 return exists;  
+
+    	 }
+	public static void balanceDatabase(String email1,int accountBalance) throws SQLException {
+		Connection connection = null;
+        PreparedStatement ps = null;
+        
+        try {
+        	connection=DbConnect.getInstance().getConnection();
+        	ps=connection.prepareStatement(PaymentQueries.BALANCE_QUERY);
+        	ps.setString(1, email1);
+        	ps.setInt(2,accountBalance);
+        	ps.executeUpdate();
+        	
+        }
+        finally {
+        	ps.close();
+        	//rs.close();
+			connection.close();
+        }
+        
+	}
+
+	public static boolean checkEmail(String myEmail) throws SQLException {
+		 Connection connection = null;
+	   	 PreparedStatement ps = null; 
+	   	 ResultSet rs = null;
+	   	 boolean emailExists= false;
+	   	 try {
+	   	 	connection=DbConnect.getInstance().getConnection();
+	   	 	ps=connection.prepareStatement(PaymentQueries.ACCOUNTEMAIL_QUERY);
+	   	 	ps.setString(1,myEmail);
+	   	 	rs=ps.executeQuery();
+	   	 	if(rs.next()) 
+	   	      {
+	   	 		emailExists=true;
+	   	      }
+		}
+	   	finally {
+    	 	ps.close();
+    	 	rs.close();
+    	 	connection.close();
+    	 }
+		return emailExists;
+	}
 }

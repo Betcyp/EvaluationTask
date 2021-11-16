@@ -1,35 +1,97 @@
-2021-10-11 08:28:08 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-11 08:35:05 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-11 08:35:07 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-11 08:36:44 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-11 08:36:48 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-11 08:37:56 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-11 08:37:58 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-11 08:37:59 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-11 08:38:04 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-11 08:46:21 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-11 08:46:22 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-11 10:55:30 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-11 10:55:32 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-27 09:24:34 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-27 09:24:34 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-27 11:18:31 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-27 11:18:31 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-27 11:23:38 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-27 11:23:38 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-27 11:32:23 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-27 11:32:23 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-27 11:33:08 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-27 11:33:08 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-27 11:33:54 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-27 11:33:54 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-27 11:51:42 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-27 11:51:42 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-27 11:52:18 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-27 11:52:18 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-27 11:59:55 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-27 11:59:55 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-27 12:04:10 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-27 12:04:10 INFO  ApplicationContextListener:35 - context object destroyed
-2021-10-27 12:13:06 DEBUG ApplicationContextListener:27 - Dbconnect
-2021-10-27 12:13:06 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-15 16:50:48 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-15 16:51:21 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-15 16:51:25 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-15 16:52:37 INFO  BaseServlet:52 - try
+2021-11-15 16:52:37 INFO  BaseServlet:58 - just try
+2021-11-15 16:53:20 INFO  BaseServlet:43 - JSESSIONID=7F1891F9FA119D77AF19FD5BDFDE266C
+2021-11-15 16:53:20 ERROR BaseServlet:51 - java.sql.SQLException: Field 'account_balance' doesn't have a default value
+2021-11-15 17:01:29 INFO  BaseServlet:43 - JSESSIONID=7F1891F9FA119D77AF19FD5BDFDE266C
+2021-11-15 17:01:29 ERROR BaseServlet:51 - java.sql.SQLIntegrityConstraintViolationException: Column 'email' cannot be null
+2021-11-15 17:03:39 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-15 17:03:42 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-15 17:04:00 INFO  BaseServlet:43 - JSESSIONID=AF8583AA953BD03FDF0A263E289013CE
+2021-11-15 17:04:01 ERROR BaseServlet:51 - java.sql.SQLIntegrityConstraintViolationException: Column 'email' cannot be null
+2021-11-16 12:34:28 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 12:36:08 INFO  BaseServlet:53 - try
+2021-11-16 12:36:08 INFO  BaseServlet:59 - just try
+2021-11-16 12:36:41 INFO  BaseServlet:43 - JSESSIONID=5200118A37665513114883E7D6E79C69
+2021-11-16 12:36:41 ERROR BaseServlet:52 - java.sql.SQLException: Can not issue data manipulation statements with executeQuery().
+2021-11-16 12:38:13 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 12:38:15 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 12:38:30 INFO  BaseServlet:43 - JSESSIONID=5200118A37665513114883E7D6E79C69
+2021-11-16 12:38:30 ERROR BaseServlet:52 - java.sql.SQLException: Field 'updated_at' doesn't have a default value
+2021-11-16 13:50:40 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 13:50:41 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 14:05:36 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 14:05:40 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 14:08:33 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 14:08:35 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 15:01:34 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 15:01:36 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 15:17:13 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 15:17:15 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 15:38:06 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 15:38:10 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 15:40:41 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 15:40:42 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 15:41:19 INFO  BaseServlet:53 - try
+2021-11-16 15:41:19 INFO  BaseServlet:59 - just try
+2021-11-16 15:42:16 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 15:42:21 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 15:42:36 INFO  BaseServlet:43 - JSESSIONID=F7B740D3B009E81F96B77A7FC51A2ECD
+2021-11-16 15:48:47 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 15:48:49 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 15:54:13 INFO  BaseServlet:43 - JSESSIONID=F7B740D3B009E81F96B77A7FC51A2ECD
+2021-11-16 15:54:36 INFO  BaseServlet:53 - try
+2021-11-16 15:54:36 INFO  BaseServlet:59 - just try
+2021-11-16 15:55:24 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 15:55:28 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 15:55:47 INFO  BaseServlet:43 - JSESSIONID=91D21DC91F84CD7375F9CAC38E624B4D
+2021-11-16 16:01:58 INFO  BaseServlet:53 - try
+2021-11-16 16:01:58 INFO  BaseServlet:59 - just try
+2021-11-16 16:02:30 INFO  BaseServlet:43 - JSESSIONID=993E1EA01021E55C35CAE8D7ECAE5CD1
+2021-11-16 16:03:52 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 16:03:54 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 16:09:50 INFO  BaseServlet:53 - try
+2021-11-16 16:09:50 INFO  BaseServlet:59 - just try
+2021-11-16 16:10:12 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 16:10:16 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 16:10:34 INFO  BaseServlet:38 - JSESSIONID=628588EFD71818929FD0694FB5C01D3B
+2021-11-16 16:11:20 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 16:11:22 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 16:16:24 INFO  BaseServlet:38 - JSESSIONID=628588EFD71818929FD0694FB5C01D3B
+2021-11-16 16:17:25 INFO  BaseServlet:53 - try
+2021-11-16 16:17:25 INFO  BaseServlet:59 - just try
+2021-11-16 16:19:11 INFO  BaseServlet:53 - try
+2021-11-16 16:19:11 INFO  BaseServlet:59 - just try
+2021-11-16 16:19:36 INFO  BaseServlet:53 - try
+2021-11-16 16:19:36 INFO  BaseServlet:59 - just try
+2021-11-16 16:19:36 ERROR BaseServlet:72 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'silpa@gmail.com' for key 'login.PRIMARY'
+2021-11-16 16:22:55 INFO  BaseServlet:53 - try
+2021-11-16 16:22:55 INFO  BaseServlet:59 - just try
+2021-11-16 16:23:36 INFO  BaseServlet:38 - JSESSIONID=0326FD50596663B4ED6BA3F15B93007F
+2021-11-16 16:27:54 INFO  BaseServlet:41 - JSESSIONID=0326FD50596663B4ED6BA3F15B93007F
+2021-11-16 16:39:28 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 16:39:29 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 16:39:52 INFO  BaseServlet:39 - JSESSIONID=0326FD50596663B4ED6BA3F15B93007F
+2021-11-16 16:42:44 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 16:42:45 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 16:52:55 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 16:52:56 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 17:06:40 INFO  BaseServlet:53 - try
+2021-11-16 17:06:40 INFO  BaseServlet:59 - just try
+2021-11-16 17:07:11 INFO  BaseServlet:41 - JSESSIONID=C44143B13985DD56A005F00F51006434
+2021-11-16 17:32:44 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 17:32:45 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 18:07:37 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 18:07:39 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 20:56:39 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 20:56:41 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 20:59:29 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 20:59:31 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 21:07:49 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 21:07:51 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-16 21:16:38 INFO  BaseServlet:53 - try
+2021-11-16 21:16:38 INFO  BaseServlet:59 - just try
+2021-11-16 21:18:33 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-16 21:18:35 DEBUG ApplicationContextListener:27 - Dbconnect

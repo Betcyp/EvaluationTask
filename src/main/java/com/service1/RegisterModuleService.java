@@ -13,14 +13,13 @@ import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
 import com.bussiness1.UserDetails;
-
 /**
  * Servlet implementation class RegisterModule
  */
 @WebServlet("/Register")
 public class RegisterModuleService extends BaseServlet {
 	private static final long serialVersionUID = 1L;
-	static Logger log = Logger.getLogger(RegisterModuleService.class);
+	
     
 	public RegisterModuleService() {
         super();
@@ -68,6 +67,12 @@ public class RegisterModuleService extends BaseServlet {
 					log.error(e);
 				}
 				resp.print("{\"status\":\"User successfully registered\"}");
+				int accountBalance=0;
+				try {
+					UserDetails.balanceDatabase(email1,accountBalance);
+				} catch (SQLException e) {
+					log.error(e);
+				}
 			}
 		}
 	}

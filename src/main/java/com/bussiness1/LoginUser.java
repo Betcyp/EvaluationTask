@@ -56,3 +56,12 @@ public class LoginUser {
 	
 	
 }
+/*/*JSONObject jsonObject=new JSONObject();
+while(rs.next()) {
+jsonObject.put("email",rs.getString("email"));
+jsonObject.put("password",rs.getInt("password"));
+jsonObject.put("sessionId",rs.getInt("sessionId"));
+jsonObject.put("loginTime",rs.getInt("loginTime"));
+jsonObject.put("logoutTime",rs.getInt("logoutTime"));
+}
+return jsonObject;*/
