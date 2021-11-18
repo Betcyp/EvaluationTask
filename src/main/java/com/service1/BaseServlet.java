@@ -97,7 +97,7 @@ public class BaseServlet extends HttpServlet {
 		
 		HttpSession session = request.getSession(false);
 		if(session.getAttribute("email") == null){
-			//response.sendRedirect("login.html");
+			log.info("please login");
 		}
 		else {
 		 String myEmail = (String) session.getAttribute("email");

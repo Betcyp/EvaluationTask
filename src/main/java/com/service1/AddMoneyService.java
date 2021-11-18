@@ -21,7 +21,8 @@ import com.bussiness1.UserDetails;
 @WebServlet("/AddMoneyService")
 public class AddMoneyService extends BaseServlet {
 	private static final long serialVersionUID = 1L;
-	int accountBalance;
+	
+	JSONObject obj;
     public AddMoneyService() {
         super();
        
@@ -31,38 +32,49 @@ public class AddMoneyService extends BaseServlet {
 	}
 	
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	Cookie[] cks=request.getCookies();
-		sessionValidation(request, response);
-		if(cks != null) {
-			for(Cookie cookie:cks) {
-				if(cookie.getName().equals("JSESSIONID")) {
-					log.info("JSESSIONID="+cookie.getValue());
-					HttpSession session=request.getSession();
-					//String mySessionId=session.getId();
-					String myEmail=(String) session.getAttribute("email");
-					PrintWriter resp =sendResponse(request, response);
+    	
+    		HttpSession session=sessionValidation(request);
+			String myEmail=(String) session.getAttribute("email");
+			PrintWriter resp =sendResponse(request, response);
 					
-					boolean check = false;
+			boolean check = false;
+			try {
+				check=UserDetails.checkEmail(myEmail);
+				} catch (SQLException e) {
+					log.error(e);
+				}
+				if(check!=false) {
+						
 					try {
-						check=UserDetails.checkEmail(myEmail);
-					} catch (SQLException e) {
-						log.error(e);
-					}
-					if(check!=false) {
-						AccountCommon ac = new AccountCommon();
-						double v = ac.addMoney(100);
-						resp.print(v);
-						try {
-							UserDetails.balanceDatabase(myEmail,v);
-						} catch (SQLException e) {
-							log.error(e);
+						obj = UserDetails.getBalance(myEmail);
+						} catch (SQLException e1) {
+							log.error(e1);
 						}
 						
+					double currentBalance=obj.getDouble("account balance");
+					//log.info(currentBalance);
+					double money=100;
+					double total=currentBalance+money;
+					try {
+						resp.print(UserDetails.addAndSendResponse(total,myEmail));
+						String from=myEmail;
+						String to=myEmail;
+						String transactionType="Deposited";
+						UserDetails.transactionDatabase(from,to,transactionType,money);
+						} catch (SQLException e) {
+							log.error(e);}
+									
+						/*try {
+							UserDetails.getBalance(myEmail);
+							} catch (SQLException e) {
+								log.error(e);
+							}*/
+			
+							
 					}
-				}
-			}
-		}
-		
+						
 	}
+ }
 
-}
+
+   

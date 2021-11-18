@@ -136,12 +136,32 @@ public class UserDetails {
         }
         finally {
         	ps.close();
-        	//rs.close();
 			connection.close();
         }
         
 	}
-
+	public static JSONObject addAndSendResponse(double total,String myEmail ) throws SQLException {
+		Connection connection = null;
+        PreparedStatement ps = null;
+        
+        try {
+        	connection=DbConnect.getInstance().getConnection();
+        	ps=connection.prepareStatement(PaymentQueries.BALANCEUPDATE_QUERY);
+        	ps.setDouble(1, total);
+        	ps.setString(2,myEmail);
+        	ps.executeUpdate();
+        	
+        }
+        finally {
+        	ps.close();
+			connection.close();
+        }
+        JSONObject jsonObject=new JSONObject();
+        jsonObject.put("updated Balance",total);
+		return jsonObject;
+        
+		
+	}
 	public static boolean checkEmail(String myEmail) throws SQLException {
 		 Connection connection = null;
 	   	 PreparedStatement ps = null; 
@@ -163,5 +183,77 @@ public class UserDetails {
     	 	connection.close();
     	 }
 		return emailExists;
+	}
+
+
+	public static JSONObject getBalance(String myEmail) throws SQLException {
+		 Connection connection = null;
+	   	 PreparedStatement ps = null; 
+	   	 ResultSet rs = null;
+	   
+	   	 try {
+	   	 	connection=DbConnect.getInstance().getConnection();
+	   	 	ps=connection.prepareStatement(PaymentQueries.ACCOUNTEMAIL_QUERY);
+	   	 	ps.setString(1, myEmail);
+	   	 	rs=ps.executeQuery();
+	   	 	JSONObject jsonObject=new JSONObject();
+	   	 	while(rs.next()) 
+	   	      {
+	   	 		jsonObject.put("account balance",rs.getDouble("account_balance"));
+	   	 		
+	   	      }
+	   	 	return jsonObject;
+		}
+	   	finally {
+   	 	ps.close();
+   	 	rs.close();
+   	 	connection.close();
+   	 }
+	}
+
+	public static void transactionDatabase(String from, String to, String transactionType, double money) throws SQLException {
+		Connection connection = null;
+        PreparedStatement ps = null;
+        
+        try {
+        	connection=DbConnect.getInstance().getConnection();
+        	ps=connection.prepareStatement(PaymentQueries.TRANSACTION_QUERY);
+        	ps.setString(1, from);
+        	ps.setString(2,to);
+        	ps.setString(3,transactionType);
+        	ps.setDouble(4, money);
+        	ps.executeUpdate();
+        	
+        }
+        finally {
+        	ps.close();
+			connection.close();
+        }
+        
+		
+	}
+
+
+	public static boolean emailExists(String receiverEmail) throws SQLException {
+		Connection connection = null;
+	   	 PreparedStatement ps = null; 
+	   	 ResultSet rs = null;
+	   	 boolean eExists= false;
+	   	 try {
+	   	 	connection=DbConnect.getInstance().getConnection();
+	   	 	ps=connection.prepareStatement(PaymentQueries.EMAIL_QUERY);
+	   	 	ps.setString(1,receiverEmail);
+	   	 	rs=ps.executeQuery();
+	   	 	if(rs.next()) 
+	   	      {
+	   	 		eExists=true;
+	   	      }
+		}
+	   	finally {
+   	 	ps.close();
+   	 	rs.close();
+   	 	connection.close();
+   	 }
+		return eExists;
 	}
 }

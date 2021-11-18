@@ -1,15 +1,18 @@
 package com.bussiness1;
 
 public class AccountCommon {
-	double accountBalance;
+	//double accountBalance;
 	
 	public double getAccountBalance() {
+		double accountBalance;
 		return accountBalance;
 	}
 
 	public double addMoney(double amount) {
-		accountBalance = getAccountBalance() + amount;
-		return accountBalance;
+		double accountBalance1;
+		accountBalance1 = getAccountBalance() + amount;
+
+		return accountBalance1;
 		
 	}
 	
