@@ -13,6 +13,7 @@ import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
 import com.bussiness1.UserDetails;
+import com.constants1.CommonConstants;
 /**
  * Servlet implementation class RegisterModule
  */
@@ -20,14 +21,6 @@ import com.bussiness1.UserDetails;
 public class RegisterModuleService extends BaseServlet {
 	private static final long serialVersionUID = 1L;
 	
-    
-	public RegisterModuleService() {
-        super();
-    }
-	 protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException   {
-		   
-	 }
-
 	@SuppressWarnings("unused")
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String result=getRequestBody(request); 
@@ -38,45 +31,45 @@ public class RegisterModuleService extends BaseServlet {
 		String email=(String) jsonObject.get("email");
 		
 		boolean check = false;
-			try {
-				check=UserDetails.userExists(phoneNumber,email);
-			} 
-		    catch (SQLException e) {
-				log.error(e);
-			}
+		try {
+			check=UserDetails.phoneEmailExists(phoneNumber,email);
 		
-		if(check != false)
-		{
-			resp.print("{\"status\":\"Phone number/email already registered try with different one\"}");
-		}
-		else {
-			String firstName=(String) jsonObject.get("firstName");
-			String lastName=(String) jsonObject.get("lastName");
-			String phoneNumber1=(String) jsonObject.get("phoneNumber");
-			String email1=(String) jsonObject.get("email");
-			String pass=(String) jsonObject.get("password");
-			if(pass.length()<8) {
-				resp.print("{\"status\":\"Password must contain minimum of 8 characters and one special characters\"}");
-				String password=(String) jsonObject.get("password");
+			if(check != false)
+			{
+				resp.print("{\"status\":\"Phone number/email already registered try with different one\"}");
+				
+				
 			}
 			else {
-				String password=pass;
-				try {
+				String firstName=(String) jsonObject.get("firstName");
+				String lastName=(String) jsonObject.get("lastName");
+				String phoneNumber1=(String) jsonObject.get("phoneNumber");
+				String email1=(String) jsonObject.get("email");
+				String pass=(String) jsonObject.get("password");
+				if(pass.length()<8) {
+					resp.print("{\"status\":\"Password must contain minimum of 8 characters and one special characters\"}");
+					String password=(String) jsonObject.get("password");
+				}
+				else {
+					String password=pass;
 					UserDetails.registerDatabase(firstName,lastName,phoneNumber1,email1,password);
-				} catch (SQLException e) {
-					log.error(e);
-				}
-				resp.print("{\"status\":\"User successfully registered\"}");
-				int accountBalance=0;
-				try {
+					resp.print("{\"status\":\"User successfully registered\"}");
+					
+					double accountBalance=0;
 					UserDetails.balanceDatabase(email1,accountBalance);
-				} catch (SQLException e) {
-					log.error(e);
 				}
+				
 			}
 		}
+		catch (Exception e) {
+				resp.print("{\"status\":\"Something went wrong...Registration failed!!\"}");
+		}
 	}
-}		
+}
+		
+		
+
+		
 	
 	
          

@@ -280,3 +280,517 @@
 2021-11-18 14:30:15 DEBUG ApplicationContextListener:27 - Dbconnect
 2021-11-18 14:40:37 INFO  ApplicationContextListener:35 - context object destroyed
 2021-11-18 14:40:38 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 15:03:58 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 15:04:00 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 15:06:30 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 15:06:32 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 15:09:23 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 15:09:26 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 15:12:06 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 15:12:08 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 15:16:56 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 15:16:58 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 15:18:45 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 15:18:47 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 15:19:40 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 15:19:42 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 15:20:25 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 15:20:27 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 15:23:30 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 15:23:32 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 15:44:11 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 15:44:12 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 15:49:17 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 15:49:18 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 15:52:56 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 15:52:57 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 15:55:36 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 15:55:40 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 15:58:06 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 15:58:09 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 16:04:01 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 16:04:02 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 16:53:24 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 16:53:25 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 16:54:27 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 16:54:27 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 17:08:05 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 17:08:07 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 17:13:29 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 17:13:31 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 17:16:11 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 17:16:13 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 17:18:00 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 17:18:01 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 17:18:44 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 17:18:46 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 17:19:40 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 17:19:42 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 17:22:55 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 17:22:57 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 17:41:21 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 17:41:23 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 17:46:35 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 17:46:37 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 17:50:01 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 17:50:03 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 18:02:56 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 18:02:58 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 18:04:56 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 18:04:58 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 18:05:30 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 18:05:32 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 18:06:24 ERROR BaseServlet:72 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'amal@gmail.com' for key 'login.PRIMARY'
+2021-11-18 18:07:08 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 18:07:10 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 18:07:53 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 18:07:55 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 18:08:26 ERROR BaseServlet:72 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'amal@gmail.com' for key 'login.PRIMARY'
+2021-11-18 18:09:53 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 18:09:54 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 18:10:37 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 18:10:39 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-18 18:27:08 ERROR BaseServlet:72 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'blesson@gmail.com' for key 'login.PRIMARY'
+2021-11-18 18:30:24 ERROR BaseServlet:65 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'blesson@gmail.com-blesson@gmail.com' for key 'transaction.PRIMARY'
+2021-11-18 18:33:05 ERROR BaseServlet:65 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'blesson@gmail.com-blesson@gmail.com' for key 'transaction.PRIMARY'
+2021-11-18 18:35:27 ERROR BaseServlet:72 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'blesson@gmail.com-amal@gmail.com' for key 'transaction.PRIMARY'
+2021-11-18 18:37:28 ERROR BaseServlet:72 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'blesson@gmail.com-amal@gmail.com' for key 'transaction.PRIMARY'
+2021-11-18 18:43:34 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-18 18:43:37 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 09:58:29 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 09:58:50 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 09:58:57 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:00:32 ERROR BaseServlet:72 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'alviya@gmail.com' for key 'login.PRIMARY'
+2021-11-19 10:07:56 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:07:56 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:09:19 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:09:20 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:09:51 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:09:52 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:15:43 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:15:44 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:18:52 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:18:52 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:19:12 ERROR BaseServlet:72 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'amal@gmail.com' for key 'login.PRIMARY'
+2021-11-19 10:21:59 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:22:00 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:23:43 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:23:44 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:24:26 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:24:27 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:26:00 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:26:01 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:34:51 ERROR BaseServlet:72 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'blesson@gmail.com' for key 'login.PRIMARY'
+2021-11-19 10:36:10 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:36:11 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:36:42 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:36:43 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:38:16 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:38:17 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:38:58 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:38:59 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:39:19 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:39:20 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:40:02 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:40:03 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:43:52 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:43:53 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:44:44 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:44:45 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:45:48 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:45:49 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:46:19 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:46:21 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:46:41 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:46:42 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:47:03 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:47:04 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:49:08 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:49:09 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:51:44 ERROR BaseServlet:72 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'amal@gmail.com' for key 'login.PRIMARY'
+2021-11-19 10:55:00 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:55:00 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:58:06 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:58:07 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 10:59:18 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 10:59:19 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 11:00:42 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 11:00:43 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 11:00:53 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 11:00:53 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 11:12:07 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 11:12:09 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 11:22:54 ERROR BaseServlet:63 - java.sql.SQLIntegrityConstraintViolationException: Column 'email' cannot be null
+2021-11-19 11:23:04 ERROR BaseServlet:63 - java.sql.SQLIntegrityConstraintViolationException: Column 'email' cannot be null
+2021-11-19 11:36:14 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 11:36:16 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 12:22:48 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Column 'email' cannot be null
+2021-11-19 12:23:44 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 12:23:46 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 12:27:42 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 12:27:44 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 12:30:19 ERROR BaseServlet:57 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'blesson@gmail.com-blesson@gmail.com' for key 'transaction.PRIMARY'
+2021-11-19 12:31:39 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 12:31:41 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 12:32:45 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 12:32:46 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 12:33:14 ERROR BaseServlet:57 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'blesson@gmail.com-blesson@gmail.com' for key 'transaction.PRIMARY'
+2021-11-19 12:34:54 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 12:34:56 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 12:37:47 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 12:37:48 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 12:38:52 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 12:38:54 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 12:50:39 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'blesson@gmail.com' for key 'login.PRIMARY'
+2021-11-19 12:50:57 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'blesson@gmail.com' for key 'login.PRIMARY'
+2021-11-19 12:52:57 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 12:52:58 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 12:59:46 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 12:59:48 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 13:01:32 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'betcy@gmail.com' for key 'login.PRIMARY'
+2021-11-19 13:04:29 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 13:04:31 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 13:06:39 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 13:06:40 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 13:10:25 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 13:10:27 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 13:10:28 ERROR BaseServlet:57 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'betcy@gmail.com-betcy@gmail.com' for key 'transaction.PRIMARY'
+2021-11-19 13:17:59 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 13:18:01 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 13:18:32 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 13:18:34 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 13:20:58 ERROR BaseServlet:57 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'betcy@gmail.com-betcy@gmail.com' for key 'transaction.PRIMARY'
+2021-11-19 13:21:13 ERROR BaseServlet:65 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'betcy@gmail.com-blesson@gmail.com' for key 'transaction.PRIMARY'
+2021-11-19 13:22:17 ERROR BaseServlet:57 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'betcy@gmail.com-betcy@gmail.com' for key 'transaction.PRIMARY'
+2021-11-19 13:22:58 ERROR BaseServlet:57 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'betcy@gmail.com-betcy@gmail.com' for key 'transaction.PRIMARY'
+2021-11-19 13:23:41 ERROR BaseServlet:65 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'betcy@gmail.com-blesson@gmail.com' for key 'transaction.PRIMARY'
+2021-11-19 13:24:31 ERROR BaseServlet:65 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'betcy@gmail.com-blesson@gmail.com' for key 'transaction.PRIMARY'
+2021-11-19 13:49:51 ERROR BaseServlet:57 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'anu@gmail.com-anu@gmail.com' for key 'transaction.PRIMARY'
+2021-11-19 13:50:40 ERROR BaseServlet:57 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'anu@gmail.com-anu@gmail.com' for key 'transaction.PRIMARY'
+2021-11-19 14:11:08 ERROR BaseServlet:57 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'neethu@gmail.com-neethu@gmail.com' for key 'transaction.PRIMARY'
+2021-11-19 14:35:03 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 14:35:07 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 14:43:35 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 14:43:37 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 14:45:17 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'blesson@gmail.com' for key 'login.PRIMARY'
+2021-11-19 14:45:38 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'blesson@gmail.com' for key 'login.PRIMARY'
+2021-11-19 14:56:44 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 14:56:46 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 14:57:08 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'blesson@gmail.com' for key 'login.PRIMARY'
+2021-11-19 14:57:43 INFO  BaseServlet:33 - EMAIL=blesson@gmail.com
+2021-11-19 14:59:16 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 14:59:18 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 14:59:28 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'amal@gmail.com' for key 'login.PRIMARY'
+2021-11-19 14:59:31 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'amal@gmail.com' for key 'login.PRIMARY'
+2021-11-19 15:20:41 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 15:20:42 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 15:28:06 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 15:28:07 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 15:28:07 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'anu@gmail.com' for key 'login.PRIMARY'
+2021-11-19 15:28:24 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'blesson@gmail.com' for key 'login.PRIMARY'
+2021-11-19 15:30:15 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'blesson@gmail.com' for key 'login.PRIMARY'
+2021-11-19 15:45:34 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 15:45:35 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 15:49:44 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 15:49:45 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 15:53:08 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'anu@gmail.com' for key 'login.PRIMARY'
+2021-11-19 16:02:49 ERROR BaseServlet:37 - java.sql.SQLException: No value specified for parameter 2
+2021-11-19 16:03:32 ERROR BaseServlet:37 - java.sql.SQLException: No value specified for parameter 2
+2021-11-19 16:03:32 ERROR BaseServlet:66 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'jishnu@gmail.com' for key 'balance.PRIMARY'
+2021-11-19 16:07:37 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 16:07:38 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 16:11:46 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 16:11:47 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 16:14:22 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 16:14:23 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 16:16:30 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'jishnu@gmail.com' for key 'login.PRIMARY'
+2021-11-19 16:16:33 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'jishnu@gmail.com' for key 'login.PRIMARY'
+2021-11-19 16:16:50 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'jishnu@gmail.com' for key 'login.PRIMARY'
+2021-11-19 16:43:48 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'jibi@gmail.com' for key 'login.PRIMARY'
+2021-11-19 16:55:07 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 16:55:08 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 16:55:48 ERROR BaseServlet:73 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'jibi@gmail.com' for key 'login.PRIMARY'
+2021-11-19 16:56:52 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 16:56:53 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 17:01:00 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 17:01:01 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 17:02:34 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 17:02:35 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 17:05:00 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 17:05:01 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 17:07:07 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 17:07:09 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 17:08:35 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 17:08:37 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 17:08:47 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 17:08:49 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 17:14:52 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 17:14:53 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 17:18:40 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 17:18:42 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 17:27:12 ERROR BaseServlet:64 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'joshuva@gmail.com' for key 'login.PRIMARY'
+2021-11-19 17:27:21 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 17:27:23 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 17:28:39 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 17:28:41 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 17:41:55 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 17:41:58 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 17:44:18 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 17:44:21 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 17:44:53 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 17:44:55 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 17:52:20 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 17:52:23 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 18:02:00 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 18:02:02 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-19 18:05:39 ERROR BaseServlet:67 - java.sql.SQLIntegrityConstraintViolationException: Column 'email' cannot be null
+2021-11-19 18:27:52 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-19 18:27:54 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-21 18:26:12 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-21 18:42:11 ERROR BaseServlet:67 - java.sql.SQLIntegrityConstraintViolationException: Column 'email' cannot be null
+2021-11-21 18:45:05 ERROR BaseServlet:67 - java.sql.SQLIntegrityConstraintViolationException: Column 'email' cannot be null
+2021-11-21 18:48:05 ERROR BaseServlet:67 - java.sql.SQLIntegrityConstraintViolationException: Column 'email' cannot be null
+2021-11-21 18:48:08 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-21 18:48:10 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-21 18:49:57 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-21 18:49:58 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-21 18:51:35 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-21 18:51:36 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-21 18:52:52 ERROR BaseServlet:67 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'alu@gmail.com' for key 'login.PRIMARY'
+2021-11-21 19:04:51 ERROR BaseServlet:67 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'anu@gmail.com' for key 'login.PRIMARY'
+2021-11-21 19:07:29 ERROR BaseServlet:67 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'anu@gmail.com' for key 'login.PRIMARY'
+2021-11-21 19:08:29 ERROR BaseServlet:67 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'deepu@gmail.com' for key 'login.PRIMARY'
+2021-11-21 19:17:19 ERROR BaseServlet:67 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'deepu@gmail.com' for key 'login.PRIMARY'
+2021-11-21 19:17:24 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-21 19:17:26 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-21 19:22:26 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-21 19:22:27 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-21 22:07:56 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-21 22:07:58 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-21 23:28:09 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-21 23:28:11 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-21 23:36:35 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-21 23:36:37 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-21 23:42:51 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-21 23:42:53 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-21 23:46:18 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-21 23:46:20 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-21 23:53:52 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-21 23:53:54 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-21 23:55:20 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-21 23:55:21 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 00:19:48 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 00:19:49 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 00:23:19 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 00:23:20 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 00:26:17 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 00:26:18 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 08:26:32 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 08:28:08 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 08:28:10 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 09:12:09 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 09:12:11 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 10:05:42 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 10:05:44 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 10:15:18 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 10:15:19 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 10:18:11 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 10:18:13 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 10:22:00 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 10:22:02 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 10:24:01 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 10:24:03 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 10:26:11 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 10:26:13 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 10:27:29 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 10:27:31 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 10:29:18 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 10:29:20 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 10:32:01 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 10:32:03 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 10:35:27 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 10:35:29 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 11:05:45 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 11:05:47 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 11:09:13 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 11:09:15 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 11:09:36 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 11:09:38 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 11:11:04 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 11:11:06 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 11:11:38 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 11:11:40 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 14:34:40 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 14:34:42 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 14:36:40 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 14:36:42 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 14:50:32 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 14:50:34 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 14:50:44 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 14:50:46 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 14:53:17 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 14:53:19 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 14:55:19 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 14:55:21 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 15:12:56 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 15:12:58 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 15:13:20 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 15:13:22 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 15:23:09 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 15:23:11 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 15:24:15 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 15:24:17 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 15:28:04 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 15:28:06 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 17:24:33 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 17:24:35 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 17:34:46 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 17:34:47 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 17:35:39 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 17:35:40 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 18:20:43 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 18:20:45 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 18:21:29 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 18:21:31 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 18:22:03 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 18:22:05 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 18:22:38 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 18:22:40 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 18:25:22 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 18:25:24 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 18:25:56 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 18:25:58 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 23:18:18 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 23:18:20 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 23:41:14 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 23:41:16 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 23:50:49 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 23:50:52 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 23:53:04 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 23:53:06 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 23:56:00 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 23:56:02 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-22 23:58:46 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-22 23:58:48 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 00:22:49 ERROR BaseServlet:32 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE email=null' at line 1
+2021-11-23 00:26:16 ERROR BaseServlet:32 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE email='anju@gmail.com'' at line 1
+2021-11-23 00:30:09 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 00:30:12 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 00:42:25 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 00:42:27 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 00:43:55 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 00:43:57 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 11:31:24 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 11:41:11 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 11:41:13 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 11:46:25 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 11:46:27 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 11:50:31 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 11:50:33 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 12:14:32 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 12:14:34 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 12:35:04 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 12:35:05 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 12:35:15 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 12:35:16 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 12:38:11 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 12:38:12 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 12:39:14 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 12:39:15 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 12:44:16 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 12:44:17 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 12:48:35 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 12:48:36 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 12:49:33 ERROR BaseServlet:57 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'bincy@gmail.com' for key 'login.PRIMARY'
+2021-11-23 13:00:47 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 13:00:49 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 13:01:52 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 13:01:54 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 13:10:17 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 13:10:18 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 13:12:44 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 13:12:45 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 13:22:34 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 13:22:35 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 13:23:16 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 13:23:17 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 13:56:18 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 13:56:19 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 13:58:56 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 13:58:57 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 13:59:24 ERROR BaseServlet:38 - java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+2021-11-23 14:01:01 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 14:01:02 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 14:01:16 ERROR BaseServlet:38 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE email='bincy@gmail.com'' at line 1
+2021-11-23 14:36:01 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 14:36:03 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 14:48:30 ERROR BaseServlet:30 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CURRENT_TIMESTAMP AFTER login_time' at line 1
+2021-11-23 14:50:19 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 14:50:21 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 14:51:27 ERROR BaseServlet:30 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CURRENT_TIMESTAMP' at line 1
+2021-11-23 14:53:14 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 14:53:16 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 14:53:58 ERROR BaseServlet:32 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CURRENT_TIMESTAMP' at line 1
+2021-11-23 14:54:32 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 14:54:34 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 14:56:34 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 14:56:37 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 14:56:55 ERROR BaseServlet:30 - java.sql.SQLSyntaxErrorException: Duplicate column name 'logout_time'
+2021-11-23 14:58:36 ERROR BaseServlet:30 - java.sql.SQLSyntaxErrorException: Duplicate column name 'logout_time'
+2021-11-23 15:05:29 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 15:05:31 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 15:08:09 ERROR BaseServlet:30 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE email='bincy@gmail.com'' at line 1
+2021-11-23 15:09:27 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 15:09:29 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 15:10:20 ERROR BaseServlet:32 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE email='blesson@gmail.com'' at line 1
+2021-11-23 15:11:50 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 15:11:52 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 15:13:15 ERROR BaseServlet:32 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as CURRENT_TIMESTAMP' at line 1
+2021-11-23 15:14:12 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 15:14:14 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 17:04:39 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 17:04:41 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 17:47:00 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 17:47:02 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 18:39:53 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 18:39:55 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 18:42:15 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 18:42:17 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 18:45:28 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 18:45:29 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 18:51:22 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 18:51:23 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 22:04:28 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 22:04:30 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 22:07:41 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 22:07:43 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 22:47:57 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-23 22:48:00 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-23 22:56:18 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 10:06:47 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 10:16:10 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 10:16:12 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 10:24:19 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 10:24:21 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 10:47:44 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 10:47:46 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 10:48:40 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 10:48:42 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 10:51:24 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 10:51:26 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 10:54:41 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 10:54:43 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 11:08:37 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 11:08:39 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 11:14:46 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 11:14:48 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 11:33:41 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 11:33:42 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 11:44:26 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 11:44:27 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 11:49:59 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 11:50:00 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 11:51:03 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 11:51:04 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 11:53:18 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 11:53:19 DEBUG ApplicationContextListener:27 - Dbconnect

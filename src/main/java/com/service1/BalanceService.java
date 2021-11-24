@@ -21,36 +21,20 @@ import com.bussiness1.AccountCommon;
 public class BalanceService extends BaseServlet {
 	private static final long serialVersionUID = 1L;
 	
-    public BalanceService() {
-        super();
-    }
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-	}
-
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { 
 		
-		HttpSession session=sessionValidation(request);
+		HttpSession session=sessionValidation(request, response);
 		String myEmail=(String) session.getAttribute("email");
 		PrintWriter resp =sendResponse(request, response);
 				
-		boolean check = false;
 		try {
-				check=UserDetails.checkEmail(myEmail);
-			} catch (SQLException e) {
-				log.error(e);
+			resp.print(UserDetails.getBalance(myEmail));
+			} catch (Exception e) {
+			
+				resp.print("{\"status\":\"Something went wrong..\"}");
 			}
-		if(check!=false) {
-				try {
-					resp.print(UserDetails.getBalance(myEmail));
-				} catch (SQLException e) {
-					log.error(e);
-				}
 		}
-		else {
-			resp.print("{\"status\":\"user not found\"}");
-		}
-	}
-}			
+}
+			
 
 

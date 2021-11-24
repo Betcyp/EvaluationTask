@@ -63,4 +63,22 @@
     <servlet-name>sendMoney</servlet-name>
     <url-pattern>/send</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>viewTransaction</servlet-name>
+    <servlet-class>com.service1.ViewTransactionHistory</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>viewTransaction</servlet-name>
+    <url-pattern>/transactions</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LogoutServices</servlet-name>
+    <servlet-class>com.service1.LogoutModuleService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServices</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
 </web-app>

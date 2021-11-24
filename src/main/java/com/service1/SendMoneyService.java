@@ -14,73 +14,65 @@ import javax.servlet.http.HttpSession;
 import org.json.JSONObject;
 
 import com.bussiness1.UserDetails;
+import com.constants1.CommonConstants;
 
 
 @WebServlet("/SendMoneyService")
 public class SendMoneyService extends BaseServlet {
 	private static final long serialVersionUID = 1L;
     JSONObject obj;
-    public SendMoneyService() {
-        super();
-        
-    }
-
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-	}
-
+	JSONObject obj1;
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		HttpSession session=sessionValidation(request);
+		HttpSession session=sessionValidation(request, response);
 		String result=getRequestBody(request); 
 		JSONObject jsonObject=new JSONObject(result);
 		String myEmail=(String) session.getAttribute("email");
-		String receiverEmail=(String) jsonObject.get("email");
+		String email=(String) jsonObject.get("email");
+		Double money=Double.valueOf ( (String) jsonObject.get("sendMoney"));
+		
 		PrintWriter resp =sendResponse(request, response);
 				
-		boolean check = false;
+
 		try {
-			check=UserDetails.checkEmail(myEmail);
-			} catch (SQLException e) {
-				log.error(e);
-			}
-			if(check!=false) {
+			obj = UserDetails.getBalance(myEmail);
+			obj1 = UserDetails.getBalance(email);
+			double currentBalance=obj.getDouble("account balance");
+			double currentBalanceOfReceiver=obj1.getDouble("account balance");
+			boolean receiverEmailCheck = false;
+		
+			receiverEmailCheck=UserDetails.emailExists(email);
+			
+			if(receiverEmailCheck != false) {
+				if(money <= currentBalance) {
+					double total=currentBalance - money;                                                                                                                                                                                                                                 
+					double totalOfReceiver=currentBalanceOfReceiver + money;
+					UserDetails.balanceUpdate(total,myEmail);
+					UserDetails.balanceUpdate(totalOfReceiver,email);
+					resp.print("{\"status\":\"Successfully Sended!!\"}");
 					
-				try {
-					obj = UserDetails.getBalance(myEmail);
-					} catch (SQLException e1) {
-						log.error(e1);
-					}
+					String from=myEmail;
+					String to=email;
+					String transactionType=CommonConstants.TRANSACTION_SEND;
+					UserDetails.transactionDatabase(from,to,transactionType,money);
 					
-				double currentBalance=obj.getDouble("account balance");
-				//log.info(currentBalance);
-				boolean receiverEmailCheck = false;
-				try {
-					receiverEmailCheck=UserDetails.emailExists(receiverEmail);
-				} catch (SQLException e1) {
-					log.error(e1);
-				}
-				if(receiverEmailCheck != false) {
-					double money=10;
 					
-					if(money <= currentBalance) {
-						double total=currentBalance-money;
-						try {
-							resp.print(UserDetails.addAndSendResponse(total,myEmail));
-							String from=myEmail;
-							String to=receiverEmail;
-							String transactionType="Send";
-							UserDetails.transactionDatabase(from,to,transactionType,money);
-						} catch (SQLException e) {
-							log.error(e);
-						}
-					}
-					else {
-						resp.print("{\"status\":\"Trnsaction cancelled due to insufficient balance\"}");
-					}
+					String from1=myEmail;
+					String to1=email;
+					String transactionType1=CommonConstants.TRANSACTION_RECEIVED;
+					UserDetails.transactionDatabase(from1,to1,transactionType1,money);
 				}
 				else {
-					resp.print("{\"status\":\"Not a Registered User!!..Please register!!\"}");
+					resp.print("{\"status\":\"Transaction cancelled due to insufficient balance\"}");
+					}
+ 			}
+			else {
+				resp.print("{\"status\":\"Not a Registered User!!..\"}");
 				}
 			}
-	}
+			catch(Exception e) {
+				resp.print("{\"status\":\"Something went wrong!!..\"}");
+			}
+	
+		}
 }
+

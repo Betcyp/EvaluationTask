@@ -3,6 +3,7 @@ package com.service1;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,13 +25,8 @@ public class BaseServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	static Logger log = Logger.getLogger(BaseServlet.class);   
 	Gson gson = new Gson();
-    public BaseServlet() {
-        super();
-        
-    }
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
-	}
+   
+
 	protected String getRequestBody(HttpServletRequest request) {
 		StringBuffer sb = new StringBuffer();
 		String result= null;
@@ -57,6 +53,7 @@ public class BaseServlet extends HttpServlet {
 	    resp = out;
 		return resp;
 		
+		
 		/*String result=getRequestBody(request); 
 		RegisterUser reg = new RegisterUser(result);
         String registerJson = this.gson.toJson(reg);
@@ -68,39 +65,16 @@ public class BaseServlet extends HttpServlet {
 	    
 	}
 	
-	/*protected void doPost(HttpServletRequest request, HttpServletResponse response,int c) throws ServletException, IOException {
+	protected HttpSession sessionValidation(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		PrintWriter resp =sendResponse(request, response);
+		HttpSession session=request.getSession();
+		//allow access only if session exists
+		if(session == null){
 		
-		
-		HttpSession session = request.getSession(false);
-		  if (session == null)
-		  {
-			  log.info("No session is available");
-			  c=1;
-			//  session = request.getSession();
-		  }
-		  else {
-			  log.info("already session is created");
-			  c=2;
-		  }
-		  
-		  /*HttpSession session = request.getSession(false);
-		  if (session != null)
-		  {
-			 return session;
-		  }
-		  else {
-			  return null;
-		  }
-	
-	}*/
-	protected HttpSession sessionValidation(HttpServletRequest request) {
-		
-		HttpSession session = request.getSession(false);
-		if(session.getAttribute("email") == null){
-			log.info("please login");
+			resp.print("{\"status\":\"Login failed!!..Please login\"}");
 		}
 		else {
-		 String myEmail = (String) session.getAttribute("email");
+		 String email = (String) session.getAttribute("email");
 		}
 		
 		String email = null;
@@ -114,6 +88,34 @@ public class BaseServlet extends HttpServlet {
 			}
 		}
 		return session;
+		
+	}
+	
+	protected HttpSession sessionCreation(String email,String password,HttpServletRequest request, HttpServletResponse response) throws IOException {
+		
+		PrintWriter resp =sendResponse(request, response);
+		HttpSession session=request.getSession();
+		resp.print("{\"status\":\"You are Successfully Logged In!!\"}");
+		
+		session.setMaxInactiveInterval(5*60);
+		session.setAttribute("email", email);
+		session.setAttribute("password", password);
+		
+		Cookie ck  =new Cookie("email",email);
+		//ck.setMaxAge(5*60);
+	    response.addCookie(ck);
+		
+		return session;
+		
+	}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		BaseResponse baseResponse=null;
+		
+		String result=getRequestBody(request);
+		
+		baseResponse=new BaseResponse();
+		
 		
 	}
 }

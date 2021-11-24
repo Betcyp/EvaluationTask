@@ -21,17 +21,7 @@ import com.bussiness1.UserDetails;
 @WebServlet("/LoginModuleService")
 public class LoginModuleService extends BaseServlet {
 	private static final long serialVersionUID = 1L;
-       
     
-    public LoginModuleService() {
-        super();
-       
-    }
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-	}
-
-	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String result=getRequestBody(request); 
@@ -44,38 +34,32 @@ public class LoginModuleService extends BaseServlet {
 		boolean enter = false;
 		
 		try {
-			enter=UserDetails.emailPassExists(email, password);
-		} catch (SQLException e) {
-			log.error(e);
-		}
-	
-		if(enter != false) {
 		
-			HttpSession session=request.getSession();
-			session.setMaxInactiveInterval(5*60);
-
-			session.setAttribute("email", email);
-			session.setAttribute("password", password);
+			enter=UserDetails.emailPassExists(email, password);
+		
+			if(enter != false) {
+		
+				HttpSession session=sessionCreation( email, password, request, response);	
+				session=sessionValidation(request, response);
+				String mySessionId=session.getId();
+				String myEmail=(String) session.getAttribute("email");
+			    String myPass=(String) session.getAttribute("password");
 			
-			Cookie ck  =new Cookie("email",email);
-		    response.addCookie(ck);
-		    
-			String mySessionId=session.getId();
-			
-		    String myEmail=(String) session.getAttribute("email");
-		    String myPass=(String) session.getAttribute("password");
-		    
-			try {
-				UserDetails.loginDatabase(myEmail, myPass, mySessionId);
-				resp.print("");
-			} catch (SQLException e) {
-				log.error(e);
+			    UserDetails.loginDatabase(myEmail, myPass, mySessionId);
+			}
+			else {
+				resp.print("{\"status\":\"invalid credentials\"}");
 			}
 			
 		}
-		else {
-			resp.print("{\"status\":\"invalid credentials\"}");
+		catch (Exception e) {
+			resp.print("{\"status\":\"login failed\"}");
+			
 		}
-      }
-
+			
+	}
 }
+		
+
+
+

@@ -10,41 +10,35 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.json.JSONObject;
+
 import com.bussiness1.UserDetails;
 
 
 @WebServlet("/ViewTransactionHistory")
 public class ViewTransactionHistory extends BaseServlet {
 	private static final long serialVersionUID = 1L;
-       
-    public ViewTransactionHistory() {
-        super();
-       
-    }
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
-	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		HttpSession session=sessionValidation(request);
+		HttpSession session=sessionValidation(request, response);
 		String myEmail=(String) session.getAttribute("email");
+		String email=(String) session.getAttribute("email");
 		PrintWriter resp =sendResponse(request, response);
-		boolean check = false;
+		
+		
 		try {
-				check=UserDetails.checkEmail(myEmail);
-			} catch (SQLException e) {
-				log.error(e);
+			if(UserDetails.getTransactionDetails(myEmail,email)==null) {
+				resp.print("{\"status\":\"No transactions made\"}");
 			}
-		if(check!=false) {
-				try {
-					resp.print(UserDetails.getTransactionDetails(myEmail));
-				} catch (SQLException e) {
-					log.error(e);
-				}
+			else {
+				resp.print(UserDetails.getTransactionDetails(myEmail,email));
+			}
 		}
-		else {
-			resp.print("{\"status\":\"No transactions have been yet\"}");
-		}		
-	}
-
+		catch (Exception e) {
+			resp.print("{\"status\":\"Something went wrong\"}");
+		}
+	} 
 }
+
+
