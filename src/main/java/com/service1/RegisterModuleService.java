@@ -43,26 +43,27 @@ public class RegisterModuleService extends BaseServlet {
 			else {
 				String firstName=(String) jsonObject.get("firstName");
 				String lastName=(String) jsonObject.get("lastName");
-				String phoneNumber1=(String) jsonObject.get("phoneNumber");
-				String email1=(String) jsonObject.get("email");
 				String pass=(String) jsonObject.get("password");
+				//regChecking(request, response, firstName, lastName, phoneNumber, email, pass);
 				if(pass.length()<8) {
 					resp.print("{\"status\":\"Password must contain minimum of 8 characters and one special characters\"}");
-					String password=(String) jsonObject.get("password");
+					String password1=(String) jsonObject.get("password");
 				}
 				else {
-					String password=pass;
-					UserDetails.registerDatabase(firstName,lastName,phoneNumber1,email1,password);
+					String password1=pass;
+					double accountBalance=0;
+					UserDetails.registerDatabase(firstName,lastName,phoneNumber,email,password1, accountBalance);
 					resp.print("{\"status\":\"User successfully registered\"}");
 					
-					double accountBalance=0;
-					UserDetails.balanceDatabase(email1,accountBalance);
+					//double accountBalance=0;
+					//UserDetails.balanceDatabase(email,accountBalance);
 				}
 				
 			}
 		}
 		catch (Exception e) {
 				resp.print("{\"status\":\"Something went wrong...Registration failed!!\"}");
+			//log.error(e);
 		}
 	}
 }

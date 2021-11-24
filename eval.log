@@ -794,3 +794,52 @@
 2021-11-24 11:51:04 DEBUG ApplicationContextListener:27 - Dbconnect
 2021-11-24 11:53:18 INFO  ApplicationContextListener:35 - context object destroyed
 2021-11-24 11:53:19 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 11:56:58 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 11:56:59 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 11:58:12 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 11:58:13 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 13:23:19 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 13:23:21 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 13:26:11 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 13:26:13 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 13:37:29 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 13:37:31 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 13:38:03 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 13:38:05 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 13:40:33 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 13:40:35 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 13:44:33 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 13:44:35 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 13:45:07 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 13:45:09 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 13:48:09 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 13:48:11 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 14:25:05 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 14:25:07 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 14:32:24 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 14:32:26 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 14:38:28 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 14:38:30 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 14:39:33 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 14:39:35 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 14:40:28 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 14:40:30 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 14:44:49 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 14:44:51 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 14:56:35 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 14:56:37 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 15:52:57 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 15:52:59 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 15:55:41 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 15:55:43 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 15:58:56 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 15:58:58 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 16:01:09 INFO  ApplicationContextListener:35 - context object destroyed
+2021-11-24 16:01:11 DEBUG ApplicationContextListener:27 - Dbconnect
+2021-11-24 16:01:34 ERROR BaseServlet:66 - java.sql.SQLException: No value specified for parameter 6
+2021-11-24 16:01:37 ERROR BaseServlet:66 - java.sql.SQLException: No value specified for parameter 6
+2021-11-24 16:01:38 ERROR BaseServlet:66 - java.sql.SQLException: No value specified for parameter 6
+2021-11-24 16:08:58 ERROR BaseServlet:66 - java.sql.SQLException: No value specified for parameter 6
+2021-11-24 16:09:00 ERROR BaseServlet:66 - java.sql.SQLException: No value specified for parameter 6
+2021-11-24 16:13:51 ERROR BaseServlet:66 - java.sql.SQLException: No value specified for parameter 6
+2021-11-24 16:13:52 ERROR BaseServlet:66 - java.sql.SQLException: No value specified for parameter 6

@@ -21,7 +21,7 @@ import com.constants1.CommonConstants;
 public class SendMoneyService extends BaseServlet {
 	private static final long serialVersionUID = 1L;
     JSONObject obj;
-	JSONObject obj1;
+	JSONObject objBal;
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session=sessionValidation(request, response);
 		String result=getRequestBody(request); 
@@ -35,44 +35,14 @@ public class SendMoneyService extends BaseServlet {
 
 		try {
 			obj = UserDetails.getBalance(myEmail);
-			obj1 = UserDetails.getBalance(email);
+			objBal = UserDetails.getBalance(email);
 			double currentBalance=obj.getDouble("account balance");
-			double currentBalanceOfReceiver=obj1.getDouble("account balance");
-			boolean receiverEmailCheck = false;
-		
-			receiverEmailCheck=UserDetails.emailExists(email);
-			
-			if(receiverEmailCheck != false) {
-				if(money <= currentBalance) {
-					double total=currentBalance - money;                                                                                                                                                                                                                                 
-					double totalOfReceiver=currentBalanceOfReceiver + money;
-					UserDetails.balanceUpdate(total,myEmail);
-					UserDetails.balanceUpdate(totalOfReceiver,email);
-					resp.print("{\"status\":\"Successfully Sended!!\"}");
-					
-					String from=myEmail;
-					String to=email;
-					String transactionType=CommonConstants.TRANSACTION_SEND;
-					UserDetails.transactionDatabase(from,to,transactionType,money);
-					
-					
-					String from1=myEmail;
-					String to1=email;
-					String transactionType1=CommonConstants.TRANSACTION_RECEIVED;
-					UserDetails.transactionDatabase(from1,to1,transactionType1,money);
-				}
-				else {
-					resp.print("{\"status\":\"Transaction cancelled due to insufficient balance\"}");
-					}
- 			}
-			else {
-				resp.print("{\"status\":\"Not a Registered User!!..\"}");
-				}
-			}
-			catch(Exception e) {
+			double currentBalanceOfReceiver=objBal.getDouble("account balance");
+			sendMoneyChecking(request, response, money, currentBalance, currentBalanceOfReceiver, myEmail, email);
+		}
+		catch(Exception e) {
 				resp.print("{\"status\":\"Something went wrong!!..\"}");
 			}
-	
-		}
+}
 }
 

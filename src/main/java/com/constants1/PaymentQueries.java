@@ -23,48 +23,20 @@ public class PaymentQueries {
 	//public static final String TRANSACTIONEMAIL_QUERY="SELECT * FROM TRANSACTION WHERE sender=? OR receiver=? ORDER BY updated_at DESC";
 	
 	public static final String TRANSACTIONEMAIL_QUERY="SELECT * FROM TRANSACTION WHERE (sender=? AND (transaction_type = 'Send' OR transaction_type = 'Deposited')) OR (receiver=? AND transaction_type='Received') ORDER BY updated_at DESC";
-	
-	
-	
-	//public static final String TRANSACTIONEMAIL_QUERY="SELECT * FROM TRANSACTION WHERE (sender=? AND transaction_type IS NOT NULL) OR (receiver=? AND transaction_type='Received') ORDER BY updated_at DESC";
-	/*public static final String PROCEDURE_QUERY=
-			"CREATE PROCEDURE `UPDATEANDINSERT`(IN `branch` VARCHAR(60), IN `year` INT) NOT "
-			"DETERMINISTIC CONTAINS SQL SQL SECURITY DEFINER" 
-			"BEGIN"
-			"SELECT 
-			   ( select sum(sales.amount) from sales 
-			     where month (sales.date)= 11 and sales.branch = branch ) as Sales ,
-			   ( select sum(expenses.amount) from expenses 
-			     where month(expenses.date)= 11 and expenses.branch = branch ) as Expenses 
-			   ;
-			END
-	*/
 
-	// static final String CLEAR_QUERY="DELETE * FROM LOGIN WHERE email=?";
-
-	//public static final String LOGOUTUPDATE_QUERY ="UPDATE LOGIN SET logout_time as CURRENT_TIMESTAMP ";
-	
-	//public static final String LOGOUTUPDATE_QUERY ="ALTER TABLE login ADD logout_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP";
 }
-//SELECT sender,receiver FROM TRANSACTION 
+	
 
 
 
 
 
 
-/*HttpSession session=request.getSession();
-session.setMaxInactiveInterval(5*60);
 
-//Date createdAt = new Date(session.getCreatedAt());
-session.setAttribute("email", email);
-session.setAttribute("password", password);
-Cookie ck1  =new Cookie("email",email);
-//Cookie ck2  =new Cookie("password",password);
-//String mySessionId=session.getId();
 
-ck1.setMaxAge(30*60);
-response.addCookie(ck1);
-//response.addCookie(ck2);
-//String myEmail=(String) session.getAttribute("email");
-//String myPass=(String) session.getAttribute("password");*/
+/*public static final String SAMPLE = "CREATE PROCEDURE samplep (IN email VARCHAR(45)) "
+			+"BEGIN "
+			+ "INSERT INTO REGISTER(firstName,lastName,phoneNumber,email,password) VALUES (?, ?, ?, ?, ?)"
+			+ "END"*/
+
+    		

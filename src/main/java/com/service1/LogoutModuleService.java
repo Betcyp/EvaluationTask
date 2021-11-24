@@ -24,9 +24,7 @@ public class LogoutModuleService extends BaseServlet {
 		PrintWriter resp =sendResponse(request, response);
 		
 		if(sessions != null){
-			
-    		sessions.invalidate();
-    		
+			sessions.invalidate();
     		resp.print("{\"status\":\"You are Successfully Logged out!!\"}");
     	}
     	

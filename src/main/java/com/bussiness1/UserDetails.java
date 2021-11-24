@@ -1,5 +1,6 @@
 package com.bussiness1;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -69,7 +70,7 @@ public class UserDetails {
      }
 	
 	
-	public static void registerDatabase(String firstName, String lastName, String phoneNumber1, String email1, String password) throws SQLException {
+	/*public static void registerDatabase(String firstName, String lastName, String phoneNumber, String email, String password) throws SQLException {
 		        
 		Connection connection = null;
         PreparedStatement ps = null; 
@@ -78,8 +79,8 @@ public class UserDetails {
         	ps=connection.prepareStatement(PaymentQueries.REGISTER_QUERY);
 			ps.setString(1,firstName);
 			ps.setString(2,lastName);
-			ps.setString(3,phoneNumber1);
-			ps.setString(4,email1);
+			ps.setString(3,phoneNumber);
+			ps.setString(4,email);
 			ps.setString(5,password);
 			ps.executeUpdate();		
 		}
@@ -87,7 +88,7 @@ public class UserDetails {
 			ps.close();
 			connection.close();
 		}
-	}
+	}*/
 	
 	public static void loginDatabase(String myEmail, String myPass, String mySessionId) throws SQLException {
 		Connection connection = null;
@@ -132,14 +133,14 @@ public class UserDetails {
     	 return exists;  
 
     	 }
-	public static void balanceDatabase(String email1,double accountBalance) throws SQLException {
+	public static void balanceDatabase(String email,double accountBalance) throws SQLException {
 		Connection connection = null;
         PreparedStatement ps = null;
         
         try {
         	connection=DbConnect.getInstance().getConnection();
         	ps=connection.prepareStatement(PaymentQueries.BALANCE_QUERY);
-        	ps.setString(1, email1);
+        	ps.setString(1, email);
         	ps.setDouble(2,accountBalance);
         	ps.executeUpdate();
         	
@@ -307,39 +308,46 @@ public class UserDetails {
   	 	connection.close();
 	   	}
 	}
-	/*public static void loginDatabase1(String email) throws SQLException {
-		Connection connection = null;
-        PreparedStatement ps = null;
-
-		try {
-			connection=DbConnect.getInstance().getConnection();
-			ps=connection.prepareStatement(PaymentQueries.CLEAR_QUERY);
-			ps.setString(1,email);
-            //ps.setString(2,myPass);
-           // ps.setString(3,mySessionId);
-            ps.executeUpdate();
-		}
-		finally {
-			ps.close();
-			connection.close();
-		}
-		
-	}*/
-	/*public static void logOutTimeUpdate() throws SQLException {
-		Connection connection = null;
-        PreparedStatement ps = null;
+	
+	public static void registerDatabase(String firstName, String lastName, String phoneNumber, String email, String password1, double accountBalance) throws SQLException {
         
+		Connection connection = null;
+		CallableStatement cs = null; 
         try {
         	connection=DbConnect.getInstance().getConnection();
-        	ps=connection.prepareStatement(PaymentQueries.LOGOUTUPDATE_QUERY);
-        	//ps.setString(1,myEmail);
-        	ps.executeUpdate();
-        	
-        }
+        	cs= connection.prepareCall("{call registration(?, ?, ?, ?, ?, ?)}");
+			cs.setString(1,firstName);
+			cs.setString(2,lastName);
+			cs.setString(3,phoneNumber);
+			cs.setString(4,email);
+			cs.setString(5,password1);
+			cs.setDouble(6,accountBalance);
+			cs.executeUpdate();		
+		}
         finally {
-        	ps.close();
+			cs.close();
 			connection.close();
-        }
-		
-	}*/
+		}
+	}
+	
+public static void updateBalanceAndTransactions(double total,String myEmail,String from1,String to1, String transactionType,double money) throws SQLException {
+        
+		Connection connection = null;
+		CallableStatement cs = null; 
+        try {
+        	connection=DbConnect.getInstance().getConnection();
+        	cs= connection.prepareCall("{call update_transaction(?, ?, ?, ?, ?, ?)}");
+			cs.setDouble(1,total);
+			cs.setString(2,myEmail);
+			cs.setString(3,from1);
+			cs.setString(4,to1);
+			cs.setString(5,transactionType);
+			cs.setDouble(6,money);
+			cs.executeUpdate();		
+		}
+        finally {
+			cs.close();
+			connection.close();
+		}
+}
 }

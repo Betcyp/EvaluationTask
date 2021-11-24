@@ -37,14 +37,12 @@ public class AddMoneyService extends BaseServlet {
 			
 				double currentBalance=obj.getDouble("account balance");
 				double total=currentBalance + money;
-			
-				UserDetails.balanceUpdate(total,myEmail);
-				resp.print("{\"status\":\"Successfully Deposited!!\"}");
 				
-				String from=myEmail;
-				String to=myEmail;
+				String from1=myEmail;
+				String to1=myEmail;
 				String transactionType=CommonConstants.TRANSACTION_DEPO;
-				UserDetails.transactionDatabase(from,to,transactionType,money);
+				UserDetails.updateBalanceAndTransactions(total,myEmail, from1, to1, transactionType, money);
+				resp.print("{\"status\":\"Successfully Deposited!!\"}");
 				
 			} 
 			catch (Exception e) {

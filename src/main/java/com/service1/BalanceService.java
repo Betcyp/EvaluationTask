@@ -30,7 +30,6 @@ public class BalanceService extends BaseServlet {
 		try {
 			resp.print(UserDetails.getBalance(myEmail));
 			} catch (Exception e) {
-			
 				resp.print("{\"status\":\"Something went wrong..\"}");
 			}
 		}

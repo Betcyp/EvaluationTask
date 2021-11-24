@@ -17,6 +17,8 @@ import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
 import com.bussiness1.RegisterUser;
+import com.bussiness1.UserDetails;
+import com.constants1.CommonConstants;
 import com.google.gson.Gson;
 
 
@@ -25,6 +27,7 @@ public class BaseServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	static Logger log = Logger.getLogger(BaseServlet.class);   
 	Gson gson = new Gson();
+	private JSONObject jsonObject;
    
 
 	protected String getRequestBody(HttpServletRequest request) {
@@ -118,4 +121,66 @@ public class BaseServlet extends HttpServlet {
 		
 		
 	}
+	
+	protected void sendMoneyChecking(HttpServletRequest request, HttpServletResponse response, double money, double currentBalance, double currentBalanceOfReceiver, String myEmail, String email) throws ServletException, IOException {
+		
+		PrintWriter resp =sendResponse(request, response);
+		try {
+		boolean receiverEmailCheck = false;
+		receiverEmailCheck=UserDetails.emailExists(email);
+		if(receiverEmailCheck != false) {
+			if(money <= currentBalance) {
+				double total=currentBalance - money;                                                                                                                                                                                                                                 
+				double totalOfReceiver=currentBalanceOfReceiver + money;
+				
+				UserDetails.balanceUpdate(total,myEmail);
+				UserDetails.balanceUpdate(totalOfReceiver,email);
+				//UserDetails.updateBalanceAndTransactions(total,myEmail, from1, to1, transactionType, money);
+				resp.print("{\"status\":\"Successfully Sended!!\"}");
+				
+				String from1=myEmail;
+			    String to1=email;
+			    String transactionType=CommonConstants.TRANSACTION_SEND;
+				UserDetails.transactionDatabase(from1,to1,transactionType,money);
+				
+				
+				String fromRec=myEmail;
+				String toRec=email;
+				String transactionTypeRec=CommonConstants.TRANSACTION_RECEIVED;
+				UserDetails.transactionDatabase(fromRec,toRec,transactionTypeRec,money);
+			}
+			else {
+				resp.print("{\"status\":\"Transaction cancelled due to insufficient balance\"}");
+				}
+			}
+		else {
+			resp.print("{\"status\":\"Not a Registered User!!..\"}");
+			}
+		}
+		catch(Exception e) {
+			resp.print("{\"status\":\"Something went wrong!!..\"}");
+		}
+	}
+	
+	/*protected void regChecking(HttpServletRequest request, HttpServletResponse response, String firstName, String lastName, String phoneNumber, String email, String pass) throws ServletException, IOException {
+		PrintWriter resp =sendResponse(request, response);
+		try {
+			if(pass.length()<8) {
+				resp.print("{\"status\":\"Password must contain minimum of 8 characters and one special characters\"}");
+				String password=(String) jsonObject.get("password");
+			}
+			else {
+				String password=pass;
+				UserDetails.registerDatabase(firstName,lastName,phoneNumber,email,password);
+				resp.print("{\"status\":\"User successfully registered\"}");
+				
+				double accountBalance=0;
+				UserDetails.balanceDatabase(email,accountBalance);
+		}
+	}
+		catch(Exception e) {
+			resp.print("{\"status\":\"Something went wrong!!..\"}");
+		}
+}*/
+
 }
